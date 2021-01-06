@@ -1,0 +1,373 @@
+/***** Fonts *****/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@700&display=swap');
+@import url('http://fontlibrary.org/face/dejavu-sans');
+
+/****************************** Page Layout (Full size) *********************************/
+
+main {
+    max-width: 90ch;
+    margin: 0 auto 0 auto; 
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+/***** Header Layout *****/
+header {
+    max-width: 90ch;
+    margin: 0 auto 0 auto; 
+    padding: 2rem 3rem 2rem 3rem;
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    bottom: 0rem;
+    right: 2rem;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+/***** Main Text Layout *****/
+body {
+    max-width: 90ch;
+    margin: 0 auto 0 auto; 
+    padding: 0;
+}
+
+figure.border{
+    float: right;
+    width: 300px;
+    padding: 1em 1em 1em 1em;
+    margin: 0.5em;
+    margin-right: 0em;
+    border-radius: 0.5em;
+}
+
+figure img {
+    width: 300px;
+    height: auto;
+}
+
+figure iframe {
+    width: 300px;
+    height: auto;
+}
+
+div.chessboxing_clubs {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+th, td {
+    padding-top: 0.25rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+div > p {
+    text-align: center;
+    margin: 1rem;
+}
+
+figure.border1 {
+    padding: 1rem;
+    margin: 0;
+    bottom: 3.5rem;
+    right: 0;
+    float: right;
+    position: absolute;
+    width: 300px;
+}
+
+footer {
+    padding: 2.5rem;
+}
+
+/****************************** Presentation *********************************/
+
+/* The code below was added to ensure when links in the header and footer are clicked they remain the colour intended in the design */
+*{
+    color: inherit;
+}
+
+main {
+    font-family: "Crimson Text", Times, serif;  
+    font-size: 14pt;
+    background: white;
+}
+
+/***** Header Presentation *****/
+header {
+    font-family: "Kanit", Times, serif;
+    color: white;
+    background: url(http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 52pt;
+}
+
+/* The code below was added to ensure the underline is removed from the links in the header*/
+nav * {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* The code below was added to ensure that the links in the header change colour and have a pale white block around them when they are hovered over*/
+nav li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: yellow;
+}
+
+/***** Main Text Presentation *****/
+body {
+    background: #bbbbbb;
+}
+
+h2 {
+    font-family: "Kanit", Times, sans-serif;
+    color: #607293;
+    font-size: 20pt;
+}
+
+figure.border {
+    text-align: center;
+    font-size: 12pt;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 3pt;
+}
+
+/* The 4 code blocks below were added to ensure the chess peices appear correctly*/
+h2#chess1:before {
+    content: '\2655';
+    font-size: 30pt;
+    font-family: "DejaVuSansOblique", "DejaVu Sans", serif, sans-serif;
+    font-weight: normal;
+}
+
+h2#chess2:before {
+    content: '\265a';
+    font-size: 30pt;
+    font-family: "DejaVuSansOblique", "DejaVu Sans", serif, sans-serif;
+    font-weight: normal;
+}
+
+h2#chess3:before {
+    content: '\2656';
+    font-size: 30pt;
+    font-family: "DejaVuSansOblique", "DejaVu Sans", serif, sans-serif;
+    font-weight: normal;
+}
+
+h2#chess4:before {
+    content: '\265d';
+    font-size: 30pt;
+    font-family: "DejaVuSansOblique", "DejaVu Sans", serif, sans-serif;
+    font-weight: normal;
+}
+
+div.chessboxing_clubs {
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 3pt;
+    font-size: 12pt;
+}
+
+div > p {
+    font-style: italic;
+}
+
+table {
+    border-top: 2pt solid #cccccc;
+    border-bottom: 2pt solid #cccccc;
+    border-collapse: collapse;
+}
+
+table thead {
+    border-bottom: 2pt solid #cccccc;
+}
+
+th, td {
+    border-bottom: 1pt solid #cccccc;
+}
+
+/***** Footer Presentation *****/
+
+footer {
+    font-family: "Crimson Text", Times, serif;  
+    font-size: 12pt;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/******************************* Responsive Layouts **********************************/
+
+@media screen and (max-width: 600px) {
+
+    /*** Header Layout ***/
+    header {
+        max-width: 90ch;
+        height: 20rem;
+        margin: 0 auto 0 auto; 
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /*** Main Text Layout ***/
+    nav ul {
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        text-align: right;
+    }
+    
+    nav li {
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 1.5rem;
+    }
+
+    main {
+        max-width: 90ch;
+        margin: 0 auto 0 auto; 
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    figure.border{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    figure.border1{
+        float: none;
+        position: static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        padding-bottom: 0rem;
+    }
+
+    table {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure img {
+        width: 400px;
+        height: auto;
+    }
+    
+    figure iframe {
+        width: 400px;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    /*** Header Layout ***/
+    h1 {
+        font-size: 35pt;
+    }
+
+    /*** Main Text Layout ***/
+    figure.border{
+        width: 250px;
+    }
+
+    figure.border1{
+        width: 250px;
+    }
+
+    figure img {
+        width: 250px;
+        height: auto;
+    }
+    
+    figure iframe {
+        width: 250px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    /*** Header Layout ***/
+    h1 {
+        font-size: 25pt;
+    }
+
+    /*** Main Text Layout ***/
+    figure.border{
+        width: 150px;
+    }
+    
+    figure.border1{
+        width: 150px;
+    }
+    
+    figure img {
+        width: 150px;
+        height: auto;
+    }
+        
+    figure iframe {
+        width: 150px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 250px) {
+
+    /*** Header Layout ***/
+    h1 {
+        font-size: 20pt;
+    }
+
+    /*** Main Text Layout ***/
+    figure.border{
+        width: 100px;
+    }
+        
+    figure.border1{
+        width: 100px;
+    }
+        
+    figure img {
+        width: 100px;
+        height: auto;
+    }
+            
+    figure iframe {
+        width: 100px;
+        height: auto;
+    }
+
+}
